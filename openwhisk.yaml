@@ -1,0 +1,12 @@
+controller:
+  lean: false
+
+whisk:
+  ingress:
+    type: NodePort
+    apiHostPort: 31001
+  limits:
+    actionsInvokesPerminute: 1000
+
+nginx:
+  httpsNodePort: 31001
