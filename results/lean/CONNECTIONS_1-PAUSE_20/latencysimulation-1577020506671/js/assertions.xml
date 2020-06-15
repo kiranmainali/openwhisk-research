@@ -1,0 +1,50 @@
+<testsuite name="org.apache.openwhisk.LatencySimulation" tests="16" errors="0" failures="8" time="0">
+<testcase name="Warm nodejs:default invocation: mean of response time is less than or equal to 100.0" status="false" time="0">
+  <failure type="Warm nodejs:default invocation">Actual value: 294.0</failure>
+</testcase>
+<testcase name="Warm nodejs:default invocation: mean of response time is less than 100.0" status="false" time="0">
+  <failure type="Warm nodejs:default invocation">Actual value: 294.0</failure>
+</testcase>
+<testcase name="Warm nodejs:default invocation: count of failed requests is less than or equal to 0.0" status="true" time="0">
+  <system-out>Warm nodejs:default invocation: count of failed requests is less than or equal to 0.0</system-out>
+</testcase>
+<testcase name="Warm nodejs:default invocation: percentage of failed requests is less than or equal to 0.1" status="true" time="0">
+  <system-out>Warm nodejs:default invocation: percentage of failed requests is less than or equal to 0.1</system-out>
+</testcase>
+<testcase name="Warm python:default invocation: mean of response time is less than or equal to 100.0" status="false" time="0">
+  <failure type="Warm python:default invocation">Actual value: 234.0</failure>
+</testcase>
+<testcase name="Warm python:default invocation: mean of response time is less than 100.0" status="false" time="0">
+  <failure type="Warm python:default invocation">Actual value: 234.0</failure>
+</testcase>
+<testcase name="Warm python:default invocation: count of failed requests is less than or equal to 0.0" status="true" time="0">
+  <system-out>Warm python:default invocation: count of failed requests is less than or equal to 0.0</system-out>
+</testcase>
+<testcase name="Warm python:default invocation: percentage of failed requests is less than or equal to 0.1" status="true" time="0">
+  <system-out>Warm python:default invocation: percentage of failed requests is less than or equal to 0.1</system-out>
+</testcase>
+<testcase name="Warm swift:default invocation: mean of response time is less than or equal to 100.0" status="false" time="0">
+  <failure type="Warm swift:default invocation">Actual value: 350.0</failure>
+</testcase>
+<testcase name="Warm swift:default invocation: mean of response time is less than 100.0" status="false" time="0">
+  <failure type="Warm swift:default invocation">Actual value: 350.0</failure>
+</testcase>
+<testcase name="Warm swift:default invocation: count of failed requests is less than or equal to 0.0" status="true" time="0">
+  <system-out>Warm swift:default invocation: count of failed requests is less than or equal to 0.0</system-out>
+</testcase>
+<testcase name="Warm swift:default invocation: percentage of failed requests is less than or equal to 0.1" status="true" time="0">
+  <system-out>Warm swift:default invocation: percentage of failed requests is less than or equal to 0.1</system-out>
+</testcase>
+<testcase name="Warm java:default invocation: mean of response time is less than or equal to 100.0" status="false" time="0">
+  <failure type="Warm java:default invocation">Actual value: 231.0</failure>
+</testcase>
+<testcase name="Warm java:default invocation: mean of response time is less than 100.0" status="false" time="0">
+  <failure type="Warm java:default invocation">Actual value: 231.0</failure>
+</testcase>
+<testcase name="Warm java:default invocation: count of failed requests is less than or equal to 0.0" status="true" time="0">
+  <system-out>Warm java:default invocation: count of failed requests is less than or equal to 0.0</system-out>
+</testcase>
+<testcase name="Warm java:default invocation: percentage of failed requests is less than or equal to 0.1" status="true" time="0">
+  <system-out>Warm java:default invocation: percentage of failed requests is less than or equal to 0.1</system-out>
+</testcase>
+</testsuite>

@@ -1,0 +1,103 @@
+Name:               minikube
+Roles:              master
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=linux
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=minikube
+                    kubernetes.io/os=linux
+                    node-role.kubernetes.io/master=
+                    openwhisk-role=invoker
+Annotations:        kubeadm.alpha.kubernetes.io/cri-socket: /var/run/dockershim.sock
+                    node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Sun, 22 Dec 2019 13:39:37 +0100
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  minikube
+  AcquireTime:     <unset>
+  RenewTime:       Sun, 22 Dec 2019 14:19:35 +0100
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Sun, 22 Dec 2019 14:15:52 +0100   Sun, 22 Dec 2019 13:39:31 +0100   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Sun, 22 Dec 2019 14:15:52 +0100   Sun, 22 Dec 2019 13:39:31 +0100   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Sun, 22 Dec 2019 14:15:52 +0100   Sun, 22 Dec 2019 13:39:31 +0100   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Sun, 22 Dec 2019 14:15:52 +0100   Sun, 22 Dec 2019 13:39:51 +0100   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:  192.168.64.11
+  Hostname:    minikube
+Capacity:
+  cpu:                4
+  ephemeral-storage:  16954240Ki
+  hugepages-2Mi:      0
+  memory:             3936612Ki
+  pods:               110
+Allocatable:
+  cpu:                4
+  ephemeral-storage:  16954240Ki
+  hugepages-2Mi:      0
+  memory:             3936612Ki
+  pods:               110
+System Info:
+  Machine ID:                 7686f5f0b4a04684b8d9e9b8c4a11775
+  System UUID:                b45f11ea-0000-0000-a4d8-4c327595a54d
+  Boot ID:                    3285c94d-8bd0-4325-b342-91166b1d27fd
+  Kernel Version:             4.19.81
+  OS Image:                   Buildroot 2019.02.7
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  docker://19.3.5
+  Kubelet Version:            v1.17.0
+  Kube-Proxy Version:         v1.17.0
+Non-terminated Pods:          (28 in total)
+  Namespace                   Name                                          CPU Requests  CPU Limits  Memory Requests  Memory Limits  AGE
+  ---------                   ----                                          ------------  ----------  ---------------  -------------  ---
+  kube-system                 coredns-6955765f44-f9rcx                      100m (2%)     0 (0%)      70Mi (1%)        170Mi (4%)     39m
+  kube-system                 coredns-6955765f44-ts2x6                      100m (2%)     0 (0%)      70Mi (1%)        170Mi (4%)     39m
+  kube-system                 etcd-minikube                                 0 (0%)        0 (0%)      0 (0%)           0 (0%)         40m
+  kube-system                 kube-addon-manager-minikube                   5m (0%)       0 (0%)      50Mi (1%)        0 (0%)         40m
+  kube-system                 kube-apiserver-minikube                       250m (6%)     0 (0%)      0 (0%)           0 (0%)         40m
+  kube-system                 kube-controller-manager-minikube              200m (5%)     0 (0%)      0 (0%)           0 (0%)         40m
+  kube-system                 kube-proxy-g5b97                              0 (0%)        0 (0%)      0 (0%)           0 (0%)         39m
+  kube-system                 kube-scheduler-minikube                       100m (2%)     0 (0%)      0 (0%)           0 (0%)         40m
+  kube-system                 storage-provisioner                           0 (0%)        0 (0%)      0 (0%)           0 (0%)         39m
+  kubernetes-dashboard        dashboard-metrics-scraper-7b64584c5c-5lrnq    0 (0%)        0 (0%)      0 (0%)           0 (0%)         39m
+  kubernetes-dashboard        kubernetes-dashboard-79d9cd965-l2qcg          0 (0%)        0 (0%)      0 (0%)           0 (0%)         39m
+  openwhisk                   owdev-alarmprovider-5c4c558499-wbbth          0 (0%)        0 (0%)      0 (0%)           0 (0%)         24m
+  openwhisk                   owdev-apigateway-575fd8559d-thzwg             0 (0%)        0 (0%)      0 (0%)           0 (0%)         24m
+  openwhisk                   owdev-cloudantprovider-858dbb4597-d7759       0 (0%)        0 (0%)      0 (0%)           0 (0%)         24m
+  openwhisk                   owdev-controller-0                            0 (0%)        0 (0%)      0 (0%)           0 (0%)         24m
+  openwhisk                   owdev-couchdb-7fb49554d-4828g                 0 (0%)        0 (0%)      0 (0%)           0 (0%)         24m
+  openwhisk                   owdev-kafkaprovider-6d8c79dfb8-mnxfz          0 (0%)        0 (0%)      0 (0%)           0 (0%)         24m
+  openwhisk                   owdev-nginx-7b9cc968c7-ptz8m                  0 (0%)        0 (0%)      0 (0%)           0 (0%)         24m
+  openwhisk                   owdev-redis-759bb66d89-tzlrl                  0 (0%)        0 (0%)      0 (0%)           0 (0%)         24m
+  openwhisk                   owdev-wskadmin                                0 (0%)        0 (0%)      0 (0%)           0 (0%)         24m
+  openwhisk                   wsk0-56-guest-latencytest-java                0 (0%)        0 (0%)      256Mi (6%)       256Mi (6%)     2m47s
+  openwhisk                   wsk0-57-guest-latencytest-java                0 (0%)        0 (0%)      256Mi (6%)       256Mi (6%)     2m44s
+  openwhisk                   wsk0-58-guest-latencytest-java                0 (0%)        0 (0%)      256Mi (6%)       256Mi (6%)     2m41s
+  openwhisk                   wsk0-59-guest-latencytest-java                0 (0%)        0 (0%)      256Mi (6%)       256Mi (6%)     2m37s
+  openwhisk                   wsk0-60-guest-latencytest-java                0 (0%)        0 (0%)      256Mi (6%)       256Mi (6%)     2m33s
+  openwhisk                   wsk0-61-guest-latencytest-java                0 (0%)        0 (0%)      256Mi (6%)       256Mi (6%)     2m30s
+  openwhisk                   wsk0-62-guest-latencytest-java                0 (0%)        0 (0%)      256Mi (6%)       256Mi (6%)     2m26s
+  openwhisk                   wsk0-63-guest-latencytest-java                0 (0%)        0 (0%)      256Mi (6%)       256Mi (6%)     2m22s
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests      Limits
+  --------           --------      ------
+  cpu                755m (18%)    0 (0%)
+  memory             2238Mi (58%)  2388Mi (62%)
+  ephemeral-storage  0 (0%)        0 (0%)
+Events:
+  Type    Reason                   Age                From                  Message
+  ----    ------                   ----               ----                  -------
+  Normal  NodeHasSufficientMemory  40m (x5 over 40m)  kubelet, minikube     Node minikube status is now: NodeHasSufficientMemory
+  Normal  NodeHasNoDiskPressure    40m (x5 over 40m)  kubelet, minikube     Node minikube status is now: NodeHasNoDiskPressure
+  Normal  Starting                 40m                kubelet, minikube     Starting kubelet.
+  Normal  NodeHasSufficientMemory  40m                kubelet, minikube     Node minikube status is now: NodeHasSufficientMemory
+  Normal  NodeHasNoDiskPressure    40m                kubelet, minikube     Node minikube status is now: NodeHasNoDiskPressure
+  Normal  NodeHasSufficientPID     40m                kubelet, minikube     Node minikube status is now: NodeHasSufficientPID
+  Normal  NodeNotReady             40m                kubelet, minikube     Node minikube status is now: NodeNotReady
+  Normal  NodeAllocatableEnforced  40m                kubelet, minikube     Updated Node Allocatable limit across pods
+  Normal  Starting                 39m                kube-proxy, minikube  Starting kube-proxy.
+  Normal  NodeReady                39m                kubelet, minikube     Node minikube status is now: NodeReady

@@ -1,0 +1,153 @@
+{
+  "simulation": "org.apache.openwhisk.LatencySimulation",
+  "simulationId": "latencysimulation",
+  "start": 1577017069773,
+  "description": "",
+  "scenarios": ["Invoke one action after each other to test latency"],
+  "assertions": [
+{
+  "path": "Warm nodejs:default invocation",
+  "target": "mean of response time",
+  "condition": "is less than or equal to",
+  "expectedValues": [100.0],
+  "result": false,
+  "message": "Warm nodejs:default invocation: mean of response time is less than or equal to 100.0",
+  "actualValue": [316.0]
+},
+{
+  "path": "Warm nodejs:default invocation",
+  "target": "mean of response time",
+  "condition": "is less than",
+  "expectedValues": [100.0],
+  "result": false,
+  "message": "Warm nodejs:default invocation: mean of response time is less than 100.0",
+  "actualValue": [316.0]
+},
+{
+  "path": "Warm nodejs:default invocation",
+  "target": "count of failed requests",
+  "condition": "is less than or equal to",
+  "expectedValues": [0.0],
+  "result": true,
+  "message": "Warm nodejs:default invocation: count of failed requests is less than or equal to 0.0",
+  "actualValue": [0.0]
+},
+{
+  "path": "Warm nodejs:default invocation",
+  "target": "percentage of failed requests",
+  "condition": "is less than or equal to",
+  "expectedValues": [0.1],
+  "result": true,
+  "message": "Warm nodejs:default invocation: percentage of failed requests is less than or equal to 0.1",
+  "actualValue": [0.0]
+},
+{
+  "path": "Warm python:default invocation",
+  "target": "mean of response time",
+  "condition": "is less than or equal to",
+  "expectedValues": [100.0],
+  "result": false,
+  "message": "Warm python:default invocation: mean of response time is less than or equal to 100.0",
+  "actualValue": [269.0]
+},
+{
+  "path": "Warm python:default invocation",
+  "target": "mean of response time",
+  "condition": "is less than",
+  "expectedValues": [100.0],
+  "result": false,
+  "message": "Warm python:default invocation: mean of response time is less than 100.0",
+  "actualValue": [269.0]
+},
+{
+  "path": "Warm python:default invocation",
+  "target": "count of failed requests",
+  "condition": "is less than or equal to",
+  "expectedValues": [0.0],
+  "result": true,
+  "message": "Warm python:default invocation: count of failed requests is less than or equal to 0.0",
+  "actualValue": [0.0]
+},
+{
+  "path": "Warm python:default invocation",
+  "target": "percentage of failed requests",
+  "condition": "is less than or equal to",
+  "expectedValues": [0.1],
+  "result": true,
+  "message": "Warm python:default invocation: percentage of failed requests is less than or equal to 0.1",
+  "actualValue": [0.0]
+},
+{
+  "path": "Warm swift:default invocation",
+  "target": "mean of response time",
+  "condition": "is less than or equal to",
+  "expectedValues": [100.0],
+  "result": false,
+  "message": "Warm swift:default invocation: mean of response time is less than or equal to 100.0",
+  "actualValue": [524.0]
+},
+{
+  "path": "Warm swift:default invocation",
+  "target": "mean of response time",
+  "condition": "is less than",
+  "expectedValues": [100.0],
+  "result": false,
+  "message": "Warm swift:default invocation: mean of response time is less than 100.0",
+  "actualValue": [524.0]
+},
+{
+  "path": "Warm swift:default invocation",
+  "target": "count of failed requests",
+  "condition": "is less than or equal to",
+  "expectedValues": [0.0],
+  "result": true,
+  "message": "Warm swift:default invocation: count of failed requests is less than or equal to 0.0",
+  "actualValue": [0.0]
+},
+{
+  "path": "Warm swift:default invocation",
+  "target": "percentage of failed requests",
+  "condition": "is less than or equal to",
+  "expectedValues": [0.1],
+  "result": true,
+  "message": "Warm swift:default invocation: percentage of failed requests is less than or equal to 0.1",
+  "actualValue": [0.0]
+},
+{
+  "path": "Warm java:default invocation",
+  "target": "mean of response time",
+  "condition": "is less than or equal to",
+  "expectedValues": [100.0],
+  "result": false,
+  "message": "Warm java:default invocation: mean of response time is less than or equal to 100.0",
+  "actualValue": [306.0]
+},
+{
+  "path": "Warm java:default invocation",
+  "target": "mean of response time",
+  "condition": "is less than",
+  "expectedValues": [100.0],
+  "result": false,
+  "message": "Warm java:default invocation: mean of response time is less than 100.0",
+  "actualValue": [306.0]
+},
+{
+  "path": "Warm java:default invocation",
+  "target": "count of failed requests",
+  "condition": "is less than or equal to",
+  "expectedValues": [0.0],
+  "result": true,
+  "message": "Warm java:default invocation: count of failed requests is less than or equal to 0.0",
+  "actualValue": [0.0]
+},
+{
+  "path": "Warm java:default invocation",
+  "target": "percentage of failed requests",
+  "condition": "is less than or equal to",
+  "expectedValues": [0.1],
+  "result": true,
+  "message": "Warm java:default invocation: percentage of failed requests is less than or equal to 0.1",
+  "actualValue": [0.0]
+}
+  ]
+}

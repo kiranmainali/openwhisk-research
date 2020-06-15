@@ -1,0 +1,86 @@
+Name:               minikube
+Roles:              master
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=linux
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=minikube
+                    kubernetes.io/os=linux
+                    node-role.kubernetes.io/master=
+                    openwhisk-role=invoker
+Annotations:        kubeadm.alpha.kubernetes.io/cri-socket: /var/run/dockershim.sock
+                    node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Sun, 22 Dec 2019 12:05:42 +0100
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  minikube
+  AcquireTime:     <unset>
+  RenewTime:       Sun, 22 Dec 2019 13:32:18 +0100
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Sun, 22 Dec 2019 13:31:55 +0100   Sun, 22 Dec 2019 12:05:36 +0100   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Sun, 22 Dec 2019 13:31:55 +0100   Sun, 22 Dec 2019 12:05:36 +0100   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Sun, 22 Dec 2019 13:31:55 +0100   Sun, 22 Dec 2019 12:05:36 +0100   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Sun, 22 Dec 2019 13:31:55 +0100   Sun, 22 Dec 2019 12:05:57 +0100   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:  192.168.64.10
+  Hostname:    minikube
+Capacity:
+  cpu:                4
+  ephemeral-storage:  16954240Ki
+  hugepages-2Mi:      0
+  memory:             3936652Ki
+  pods:               110
+Allocatable:
+  cpu:                4
+  ephemeral-storage:  16954240Ki
+  hugepages-2Mi:      0
+  memory:             3936652Ki
+  pods:               110
+System Info:
+  Machine ID:                 d81d1e956d9a4eedb1ef6cde59415403
+  System UUID:                925d11ea-0000-0000-8213-4c327595a54d
+  Boot ID:                    eafb10b4-7e52-4867-8f31-b386dd186673
+  Kernel Version:             4.19.81
+  OS Image:                   Buildroot 2019.02.7
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  docker://19.3.5
+  Kubelet Version:            v1.17.0
+  Kube-Proxy Version:         v1.17.0
+Non-terminated Pods:          (23 in total)
+  Namespace                   Name                                          CPU Requests  CPU Limits  Memory Requests  Memory Limits  AGE
+  ---------                   ----                                          ------------  ----------  ---------------  -------------  ---
+  kube-system                 coredns-6955765f44-ttp5c                      100m (2%)     0 (0%)      70Mi (1%)        170Mi (4%)     86m
+  kube-system                 coredns-6955765f44-vnwb5                      100m (2%)     0 (0%)      70Mi (1%)        170Mi (4%)     86m
+  kube-system                 etcd-minikube                                 0 (0%)        0 (0%)      0 (0%)           0 (0%)         86m
+  kube-system                 kube-addon-manager-minikube                   5m (0%)       0 (0%)      50Mi (1%)        0 (0%)         86m
+  kube-system                 kube-apiserver-minikube                       250m (6%)     0 (0%)      0 (0%)           0 (0%)         86m
+  kube-system                 kube-controller-manager-minikube              200m (5%)     0 (0%)      0 (0%)           0 (0%)         86m
+  kube-system                 kube-proxy-w9mzs                              0 (0%)        0 (0%)      0 (0%)           0 (0%)         86m
+  kube-system                 kube-scheduler-minikube                       100m (2%)     0 (0%)      0 (0%)           0 (0%)         86m
+  kube-system                 storage-provisioner                           0 (0%)        0 (0%)      0 (0%)           0 (0%)         86m
+  kubernetes-dashboard        dashboard-metrics-scraper-7b64584c5c-mvtcw    0 (0%)        0 (0%)      0 (0%)           0 (0%)         86m
+  kubernetes-dashboard        kubernetes-dashboard-79d9cd965-tftvn          0 (0%)        0 (0%)      0 (0%)           0 (0%)         86m
+  openwhisk                   owdev-alarmprovider-5c4c558499-hcdx6          0 (0%)        0 (0%)      0 (0%)           0 (0%)         83m
+  openwhisk                   owdev-apigateway-575fd8559d-thn4z             0 (0%)        0 (0%)      0 (0%)           0 (0%)         83m
+  openwhisk                   owdev-cloudantprovider-858dbb4597-zxgrd       0 (0%)        0 (0%)      0 (0%)           0 (0%)         83m
+  openwhisk                   owdev-controller-0                            0 (0%)        0 (0%)      0 (0%)           0 (0%)         83m
+  openwhisk                   owdev-couchdb-7fb49554d-287jb                 0 (0%)        0 (0%)      0 (0%)           0 (0%)         83m
+  openwhisk                   owdev-invoker-0                               0 (0%)        0 (0%)      0 (0%)           0 (0%)         83m
+  openwhisk                   owdev-kafka-0                                 0 (0%)        0 (0%)      0 (0%)           0 (0%)         83m
+  openwhisk                   owdev-kafkaprovider-6d8c79dfb8-plk9h          0 (0%)        0 (0%)      0 (0%)           0 (0%)         83m
+  openwhisk                   owdev-nginx-7b9cc968c7-w4vdr                  0 (0%)        0 (0%)      0 (0%)           0 (0%)         83m
+  openwhisk                   owdev-redis-759bb66d89-x5sqh                  0 (0%)        0 (0%)      0 (0%)           0 (0%)         83m
+  openwhisk                   owdev-wskadmin                                0 (0%)        0 (0%)      0 (0%)           0 (0%)         83m
+  openwhisk                   owdev-zookeeper-0                             0 (0%)        0 (0%)      0 (0%)           0 (0%)         83m
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests    Limits
+  --------           --------    ------
+  cpu                755m (18%)  0 (0%)
+  memory             190Mi (4%)  340Mi (8%)
+  ephemeral-storage  0 (0%)      0 (0%)
+Events:              <none>
